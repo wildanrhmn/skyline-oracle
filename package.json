@@ -1,0 +1,26 @@
+{
+  "name": "skyline",
+  "version": "0.1.0",
+  "private": true,
+  "description": "On-chain sharp-consensus trading engine for World Cup markets. TxLINE → Solana Oracle → Autonomous Trader on Jupiter Prediction.",
+  "packageManager": "pnpm@11.13.1",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=11.0.0"
+  },
+  "scripts": {
+    "engine": "pnpm --filter @skyline/engine start",
+    "trader": "pnpm --filter @skyline/trader start",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "anchor:build": "anchor build",
+    "anchor:deploy:devnet": "anchor deploy --provider.cluster devnet"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "tsx": "^4.20.3",
+    "vitest": "^2.1.9",
+    "@types/node": "^22.13.0"
+  }
+}

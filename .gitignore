@@ -1,0 +1,43 @@
+# Node
+node_modules/
+.pnpm-store/
+*.log
+.env
+.env.local
+
+# TypeScript
+dist/
+build/
+*.tsbuildinfo
+
+# Anchor
+.anchor/
+target/
+Cargo.lock
+
+# Solana
+test-ledger/
+*.so
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data
+*.sqlite
+*.sqlite-journal
+data/
+
+# Secrets — NEVER commit
+*.key
+*keypair*.json
+!Anchor.toml
+
+# Local tooling (skill files installed via `uipro init`)
+.claude/
+.vercel

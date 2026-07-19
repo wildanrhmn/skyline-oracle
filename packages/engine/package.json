@@ -1,0 +1,33 @@
+{
+  "name": "@skyline/engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.31.1",
+    "@skyline/shared": "workspace:*",
+    "@solana/spl-token": "^0.4.15",
+    "@solana/web3.js": "^1.98.4",
+    "better-sqlite3": "^11.10.0",
+    "dotenv": "^16.6.1",
+    "eventsource": "^3.0.5",
+    "pino": "^9.5.0",
+    "pino-pretty": "^11.3.0",
+    "tweetnacl": "^1.0.3",
+    "undici": "^7.14.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2",
+    "vitest": "^2.1.9"
+  }
+}
